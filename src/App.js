@@ -2,6 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+
+console.log(images[0])
+
+const imageParts = images.map((image) => 
+    <img src={image}/>
+);
 function App() {
   return (
     <div className="App">
@@ -19,6 +31,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        {imageParts}
+      </div>
+      <div>
+        
+      </div>
     </div>
   );
 }
