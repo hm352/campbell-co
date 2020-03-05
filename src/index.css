@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+img {
+	animation:  none;
+  transition: 1.5s;
+}
+
+.test{
+  animation: none;
+  transition: 1s;
+}
+
+.test:hover {
+  opacity: 1;
+}
+
+
+
+.drink{
+  padding-bottom: 50px;
+}
+
+{
+    animation: pulse 2s infinite;
+
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(192, 125, 58, 0.5);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 35px rgba(192, 125, 58, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(192, 125, 58, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0  rgba(192, 125, 58, 0.5);
+    box-shadow: 0 0 0 0  rgba(192, 125, 58, 0.5);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(192, 125, 58, 0);
+      box-shadow: 0 0 0 10px rgba(1192, 125, 58, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(192, 125, 58, 0);
+      box-shadow: 0 0 0 0 rgba(192, 125, 58, 0);
+  }
+}
