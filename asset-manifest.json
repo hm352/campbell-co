@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/campbell-co/static/css/main.c05b597b.chunk.css",
-    "main.js": "/campbell-co/static/js/main.596552a9.chunk.js",
-    "main.js.map": "/campbell-co/static/js/main.596552a9.chunk.js.map",
+    "main.js": "/campbell-co/static/js/main.d4e1a616.chunk.js",
+    "main.js.map": "/campbell-co/static/js/main.d4e1a616.chunk.js.map",
     "runtime-main.js": "/campbell-co/static/js/runtime-main.336a7917.js",
     "runtime-main.js.map": "/campbell-co/static/js/runtime-main.336a7917.js.map",
-    "static/js/2.825e7d95.chunk.js": "/campbell-co/static/js/2.825e7d95.chunk.js",
-    "static/js/2.825e7d95.chunk.js.map": "/campbell-co/static/js/2.825e7d95.chunk.js.map",
+    "static/js/2.f4870b9a.chunk.js": "/campbell-co/static/js/2.f4870b9a.chunk.js",
+    "static/js/2.f4870b9a.chunk.js.map": "/campbell-co/static/js/2.f4870b9a.chunk.js.map",
     "index.html": "/campbell-co/index.html",
-    "precache-manifest.d615e052418c77157d4d19f778a6b0ac.js": "/campbell-co/precache-manifest.d615e052418c77157d4d19f778a6b0ac.js",
+    "precache-manifest.1fd162af1a694313c3efc2008831ae2c.js": "/campbell-co/precache-manifest.1fd162af1a694313c3efc2008831ae2c.js",
     "service-worker.js": "/campbell-co/service-worker.js",
     "static/css/main.c05b597b.chunk.css.map": "/campbell-co/static/css/main.c05b597b.chunk.css.map",
-    "static/js/2.825e7d95.chunk.js.LICENSE.txt": "/campbell-co/static/js/2.825e7d95.chunk.js.LICENSE.txt"
+    "static/js/2.f4870b9a.chunk.js.LICENSE.txt": "/campbell-co/static/js/2.f4870b9a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.336a7917.js",
-    "static/js/2.825e7d95.chunk.js",
+    "static/js/2.f4870b9a.chunk.js",
     "static/css/main.c05b597b.chunk.css",
-    "static/js/main.596552a9.chunk.js"
+    "static/js/main.d4e1a616.chunk.js"
   ]
 }
