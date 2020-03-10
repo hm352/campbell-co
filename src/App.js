@@ -9,6 +9,17 @@ import { bounce } from 'react-animations';
 
 //  main app render function
 class App extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      ingredient: 'gin'
+    };
+  }
+
+  changeIngredient(item){
+      this.setState({ingredient: item});
+    };
+
   render(){
     return (
       <div className="App">
@@ -21,8 +32,8 @@ class App extends React.Component {
         />
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"/>
       </header>
-          <DrinkForm></DrinkForm>
-          <Drinks> </Drinks>
+          <DrinkForm submit={this.changeIngredient.bind(this)}></DrinkForm>
+          <Drinks ingredient={this.state.ingredient}> </Drinks>
       </div>
     );
   }

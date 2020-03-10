@@ -41,12 +41,13 @@ class Drinks extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
+			ingredient: this.props.ingredient,
 			drinks: []
 		};
 	}
 
 	componentDidMount() {
-		fetch("https://the-cocktail-db.p.rapidapi.com/filter.php?i=Scotch", {
+		fetch(`https://the-cocktail-db.p.rapidapi.com/filter.php?i=${this.props.ingredient}`, {
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
@@ -56,9 +57,25 @@ class Drinks extends React.Component {
 	    .then((response) => response.json())
 	    .then((responseJSON) => {
 	       // do stuff with responseJSON here...
-	       console.log(responseJSON);
 	       this.setState(responseJSON);
 	    });
+	}
+// duplicate code 
+	componentDidUpdate(prevState) {
+		if (prevState.ingredient !== this.state.ingredients){
+					fetch(`https://the-cocktail-db.p.rapidapi.com/filter.php?i=${this.props.ingredient}`, {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
+			"x-rapidapi-key": "515d24381cmshf99b9427d104edep1343b7jsnd9477b6b5db8"
+		}
+		})
+	    .then((response) => response.json())
+	    .then((responseJSON) => {
+	       // do stuff with responseJSON here...
+	       this.setState(responseJSON);
+	    });
+		}
 	}
 
 	render() {
